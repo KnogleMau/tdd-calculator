@@ -46,4 +46,21 @@ class CalculatorTest {
         assertEquals(expected, actual);
     }
 
+    @Test
+    @DisplayName("Calculator regne stykke test")
+    void test5() {
+        int expected = 14;
+        int actual = instance.add("2,3,4,5");
+        assertEquals(expected, actual);
+    }
+
+
+    @Test
+    @DisplayName("Calculator regne stykke test")
+    void test6() {
+        int expected = 100;
+        int actual = instance.add(new int[]{10,20,30,20,20});
+        assertEquals(expected, actual);
+    }
+
 }
